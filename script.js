@@ -1,14 +1,16 @@
-var length = 10;
-function foo() {
+var length = 4;
+
+function fn() {
   console.log(this.length);
 }
 
-var obj = {
-  length: 5,
-  method: function (foo) {
-    foo();
-    arg[0]();
+const obj = {
+  length: 6,
+  method(fn) {
+    fn();
   },
 };
 
-obj.method(foo, 1);
+obj.method(fn, 1, 2);
+
+// output :
