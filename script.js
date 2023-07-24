@@ -1,16 +1,15 @@
-var length = 4;
+const object = {
+  who: "World",
 
-function fn() {
-  console.log(this.length);
-}
+  greet() {
+    return `Hello, ${this.who}!`;
+  },
 
-const obj = {
-  length: 6,
-  method(fn) {
-    fn();
+  farewell: () => {
+    const what = "World"; // Using a closure to capture the value of "who"
+    return `Goodbye, ${what}!`;
   },
 };
 
-obj.method(fn, 1, 2);
-
-// output :
+console.log(object.greet()); // Output: Hello, World!
+console.log(object.farewell()); // Output: Goodbye, World!
