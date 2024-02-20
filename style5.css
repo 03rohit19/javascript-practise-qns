@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.hero{
+    background-image: linear-gradient(#c847f1,#380231);
+}
+.top-bar{
+    padding: 20px;
+    
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+.top-button{
+    float: right;
+}
+.top-button{
+    margin: 0 8px;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: 50px;
+}
